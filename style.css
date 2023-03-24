@@ -9,6 +9,7 @@ body{
   min-height: 100vh;
   text-align: center;
   font-family: 'Manrope';
+  padding:0 0 88px 0;
 }
 
 .background-color{ 
@@ -39,6 +40,7 @@ body{
 }
 
 .card-container{
+  margin-top:-210px;
   padding:0 24px;
 }
 
@@ -102,9 +104,11 @@ input[type="range"]::-webkit-slider-thumb {
 
 .slider-container{
   position: relative;
+  margin-top: 41px;
 }
 
 .slide-background{
+  border-radius: 5px;
   position: absolute;
   width:50%;
   height:8px;
@@ -184,4 +188,52 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 12px;
   line-height: 16px;
   color: #848EAD
+}
+
+.billing-container{
+  margin-top:36px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.check-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.check-text{
+  margin-left:16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848EAD;
+}
+
+.first{
+  margin-top:67px;
+}
+
+.second{
+  margin-top:11px;
+}
+
+.three{
+  margin-top:11px;
+}
+
+button{
+   margin-top:33px;
+   font-family: 'Manrope';
+   border:none;
+   width:170px;
+   height:41px;
+   background: #293356;
+   border-radius: 20.5px;
+   font-weight: 800;
+   font-size: 12px;
+   line-height: 16px;
+   color: #BECDFF;
 }
