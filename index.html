@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <header></header>
+
+
+  <main>
+   <div class="background-color">
+      <h2 class="title">
+        Simple, traffic-based pricing
+      </h2>
+      <p class="content">Sign-up for our 30-day trial. 
+        No credit card required. </p>
+   </div>
+
+   <div class="card-container">
+      <div class="card">
+        <h2 class="page-views">100K PAGEVIEWS</h2>
+        <div class="slider-container">
+          <div class="slide-background"></div>
+          <input class="slider" type="range" min="1" max="5" value="3" id="ranger">
+        </div>
+        <div class="amount">
+          <h2 class="price">$16.00</h2>
+           <p class="month">/ month</p>
+        </div>
+        <div>
+          <p class="monthly">Monthly Billing</p>
+          <input type="checkbox" id="switch"
+          class="checkbox" />
+          <label for="switch" class="toggle"></label>
+          <p class="yearly">Yearly Billing</p>
+          <div class="discount-container">
+            <span class="number">-25%</span>
+            <span class="discount">25% discount</span>
+
+          </div>
+        </div>
+      </div>
+   </div>
+  </main>
+
+  <footer></footer>
+</body>
+</html>
