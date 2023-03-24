@@ -5,6 +5,7 @@
 }
 
 body{
+  background: #F9FAFF;
   max-width:100vw;
   min-height: 100vh;
   text-align: center;
@@ -79,6 +80,20 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #10D8C4 ;
 }
 
+.slider-container{
+  position: relative;
+  margin-top: 41px;
+}
+
+.slide-background{
+  border-radius: 5px;
+  position: absolute;
+  width:50%;
+  height:8px;
+  background: #A4F3EB;
+  top:10px;
+}
+
 .amount{
   margin-top:40px;
   display:flex;
@@ -102,19 +117,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin-left:10px;
 }
 
-.slider-container{
-  position: relative;
-  margin-top: 41px;
-}
-
-.slide-background{
-  border-radius: 5px;
-  position: absolute;
-  width:50%;
-  height:8px;
-  background: #A4F3EB;
-  top:10px;
-}
 
 .discount-container{
   display:flex;
@@ -236,4 +238,113 @@ button{
    font-size: 12px;
    line-height: 16px;
    color: #BECDFF;
+}
+
+
+.desktop{
+  display:none;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .card-container{
+    margin-top:-450px;
+    padding:266px 450px 137px 450px;
+  }
+
+  body{
+    background: #F9FAFF;
+  }
+
+  .card{
+    padding:40px 44px 33px 48px;
+  }
+
+  .title{
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .content{
+    margin-top:12px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .mobile{
+    display:none;
+  }
+
+  .desktop{
+    margin:0;
+    display:flex;
+  }
+
+  .price{
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  input[type="range"] { 
+    width: 444px;
+  }
+
+  .slider-container{
+    margin-top:40px;
+  }
+
+  .pageview-month{
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+  }
+
+  .billing-container{
+    margin-top:56px;
+    justify-content: right;
+    gap:15px;
+  }
+
+  .number{
+    display:none;
+  }
+
+  .discount-container{
+    width:80px;
+    height:20px;
+  }
+
+  .discount{
+    display:block;
+  }
+
+  .bill-main-container{
+    margin-right:15px;
+  }
+
+  .check-button{
+    margin-top:73px;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+
+  button{
+    margin:0;
+  }
+
+  .first{
+    justify-content: left;
+    margin:0;
+  }
+  
+  .second{
+    justify-content: left;
+  }
+
+  .three{
+    justify-content: left;
+  }
+
+
 }
